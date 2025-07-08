@@ -18,6 +18,7 @@
 
 #include "nanoeigenpy/decompositions/sparse/simplicial-llt.hpp"
 #include "nanoeigenpy/decompositions/sparse/simplicial-ldlt.hpp"
+#include "nanoeigenpy/decompositions/sparse/sparse-lu.hpp"
 
 #ifdef NANOEIGENPY_HAS_CHOLMOD
 #include "nanoeigenpy/decompositions/sparse/cholmod/cholmod-simplicial-llt.hpp"

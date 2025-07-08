@@ -71,6 +71,7 @@ set(
   test_partial_piv_lu
   test_bdcsvd
   test_jacobi_svd
+  test_sparse_lu
 )
 
 if(BUILD_WITH_CHOLMOD_SUPPORT)

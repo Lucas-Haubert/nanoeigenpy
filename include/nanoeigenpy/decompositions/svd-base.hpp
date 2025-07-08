@@ -13,11 +13,11 @@ using namespace nb::literals;
 struct SVDBaseVisitor : nb::def_visitor<SVDBaseVisitor> {
   template <typename Derived, typename... Ts>
   void execute(nb::class_<Derived, Ts...> &cl) {
+    using MatrixType = typename Derived::MatrixType;
+    using RealScalar = typename MatrixType::RealScalar;
+
     using SVDBase = Eigen::SVDBase<Derived>;
     static_assert(std::is_base_of_v<SVDBase, Derived>);
-
-    typedef typename Derived::MatrixType MatrixType;
-    typedef typename MatrixType::RealScalar RealScalar;
 
     cl.def(nb::init<>(), "Default constructor.")
 
