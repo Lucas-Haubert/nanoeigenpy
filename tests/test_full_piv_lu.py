@@ -47,29 +47,28 @@ injective = fullpivlu.isInjective()
 surjective = fullpivlu.isSurjective()
 invertible = fullpivlu.isInvertible()
 inverse = fullpivlu.inverse()
-reconstructedmatrix = fullpivlu.reconstructedMatrix()
 
 fullpivlu.setThreshold(1e-8)
 assert fullpivlu.threshold() == 1e-8
 
-ldlt1 = nanoeigenpy.LDLT()
-ldlt2 = nanoeigenpy.LDLT()
+decomp1 = nanoeigenpy.FullPivLU()
+decomp2 = nanoeigenpy.FullPivLU()
 
-id1 = ldlt1.id()
-id2 = ldlt2.id()
+id1 = decomp1.id()
+id2 = decomp2.id()
 
 assert id1 != id2
-assert id1 == ldlt1.id()
-assert id2 == ldlt2.id()
+assert id1 == decomp1.id()
+assert id2 == decomp2.id()
 
 dim_constructor = 3
 
-ldlt3 = nanoeigenpy.LDLT(dim_constructor)
-ldlt4 = nanoeigenpy.LDLT(dim_constructor)
+decomp3 = nanoeigenpy.FullPivLU(rows, cols)
+decomp4 = nanoeigenpy.FullPivLU(rows, cols)
 
-id3 = ldlt3.id()
-id4 = ldlt4.id()
+id3 = decomp3.id()
+id4 = decomp4.id()
 
 assert id3 != id4
-assert id3 == ldlt3.id()
-assert id4 == ldlt4.id()
+assert id3 == decomp3.id()
+assert id4 == decomp4.id()

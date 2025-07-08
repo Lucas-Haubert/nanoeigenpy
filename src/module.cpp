@@ -22,6 +22,7 @@ NB_MAKE_OPAQUE(Eigen::ColPivHouseholderQR<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::CompleteOrthogonalDecomposition<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::EigenSolver<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::FullPivLU<Eigen::MatrixXd>)
+NB_MAKE_OPAQUE(Eigen::PartialPivLU<Eigen::MatrixXd>)
 
 std::string printEigenVersion(const char* delim = ".") {
   std::ostringstream oss;
@@ -47,6 +48,7 @@ NB_MODULE(nanoeigenpy, m) {
   exposeSelfAdjointEigenSolver<Matrix>(m, "SelfAdjointEigenSolver");
   exposePermutationMatrix<Eigen::Dynamic>(m, "PermutationMatrix");
   exposeFullPivLUSolver<Matrix>(m, "FullPivLU");
+  exposePartialPivLUSolver<Matrix>(m, "PartialPivLU");
 
   exposeSimplicialLLT<SparseMatrix>(m, "SimplicialLLT");
   exposeSimplicialLDLT<SparseMatrix>(m, "SimplicialLDLT");
