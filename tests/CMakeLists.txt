@@ -67,6 +67,7 @@ set(
   test_qr
   test_self_adjoint_eigen_solver
   test_simplicial_llt
+  test_full_piv_lu
 )
 
 if(BUILD_WITH_CHOLMOD_SUPPORT)
