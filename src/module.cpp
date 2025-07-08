@@ -24,6 +24,7 @@ NB_MAKE_OPAQUE(Eigen::EigenSolver<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::FullPivLU<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::PartialPivLU<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::BDCSVD<Eigen::MatrixXd>)
+NB_MAKE_OPAQUE(Eigen::JacobiSVD<Eigen::MatrixXd>)
 
 std::string printEigenVersion(const char* delim = ".") {
   std::ostringstream oss;
@@ -51,6 +52,7 @@ NB_MODULE(nanoeigenpy, m) {
   exposeFullPivLUSolver<Matrix>(m, "FullPivLU");
   exposePartialPivLUSolver<Matrix>(m, "PartialPivLU");
   exposeBDCSVDSolver<Matrix>(m, "BDCSVD");
+  exposeJacobiSVDSolver<Matrix>(m, "JacobiSVD");
 
   exposeSimplicialLLT<SparseMatrix>(m, "SimplicialLLT");
   exposeSimplicialLDLT<SparseMatrix>(m, "SimplicialLDLT");

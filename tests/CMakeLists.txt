@@ -70,6 +70,7 @@ set(
   test_full_piv_lu
   test_partial_piv_lu
   test_bdcsvd
+  test_jacobi_svd
 )
 
 if(BUILD_WITH_CHOLMOD_SUPPORT)
