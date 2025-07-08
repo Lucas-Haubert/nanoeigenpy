@@ -72,6 +72,7 @@ set(
   test_bdcsvd
   test_jacobi_svd
   test_sparse_lu
+  test_sparse_qr
 )
 
 if(BUILD_WITH_CHOLMOD_SUPPORT)

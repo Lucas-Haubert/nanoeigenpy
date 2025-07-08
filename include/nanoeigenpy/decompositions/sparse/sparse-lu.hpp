@@ -84,10 +84,12 @@ void exposeSparseLU(nb::module_ m, const char *name) {
 
       .def("rowsPermutation", &Solver::rowsPermutation,
            "Returns a reference to the row matrix permutation "
-           "\f$ P_r \f$ such that \f$P_r A P_c^T = L U\f$.")
+           "\f$ P_r \f$ such that \f$P_r A P_c^T = L U\f$.",
+           nb::rv_policy::reference_internal)
       .def("colsPermutation", &Solver::colsPermutation,
            "Returns a reference to the column matrix permutation"
-           "\f$ P_c^T \f$ such that \f$P_r A P_c^T = L U\f$.")
+           "\f$ P_c^T \f$ such that \f$P_r A P_c^T = L U\f$.",
+           nb::rv_policy::reference_internal)
 
       .def(
           "setPivotThreshold",

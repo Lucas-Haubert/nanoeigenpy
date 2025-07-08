@@ -57,6 +57,7 @@ NB_MODULE(nanoeigenpy, m) {
   exposeSimplicialLLT<SparseMatrix>(m, "SimplicialLLT");
   exposeSimplicialLDLT<SparseMatrix>(m, "SimplicialLDLT");
   exposeSparseLU<SparseMatrix>(m, "SparseLU");
+  exposeSparseQR<SparseMatrix>(m, "SparseQR");
 
 #ifdef NANOEIGENPY_HAS_CHOLMOD
   exposeCholmodSimplicialLLT<SparseMatrix>(m, "CholmodSimplicialLLT");
