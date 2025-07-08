@@ -69,6 +69,7 @@ set(
   test_simplicial_llt
   test_full_piv_lu
   test_partial_piv_lu
+  test_bdcsvd
 )
 
 if(BUILD_WITH_CHOLMOD_SUPPORT)

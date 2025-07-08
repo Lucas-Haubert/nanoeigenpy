@@ -13,6 +13,7 @@
 #include "nanoeigenpy/decompositions/permutation-matrix.hpp"
 #include "nanoeigenpy/decompositions/full-piv-lu.hpp"
 #include "nanoeigenpy/decompositions/partial-piv-lu.hpp"
+#include "nanoeigenpy/decompositions/bdcsvd.hpp"
 
 #include "nanoeigenpy/decompositions/sparse/simplicial-llt.hpp"
 #include "nanoeigenpy/decompositions/sparse/simplicial-ldlt.hpp"
