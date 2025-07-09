@@ -10,6 +10,7 @@
 #include "nanoeigenpy/decompositions/complete-orthogonal-decomposition.hpp"
 #include "nanoeigenpy/decompositions/eigen-solver.hpp"
 #include "nanoeigenpy/decompositions/self-adjoint-eigen-solver.hpp"
+#include "nanoeigenpy/decompositions/generalized-self-adjoint-eigen-solver.hpp"
 #include "nanoeigenpy/decompositions/complex-eigen-solver.hpp"
 #include "nanoeigenpy/decompositions/complex-schur.hpp"
 #include "nanoeigenpy/decompositions/generalized-eigen-solver.hpp"

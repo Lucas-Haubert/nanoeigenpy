@@ -52,6 +52,8 @@ NB_MODULE(nanoeigenpy, m) {
       m, "CompleteOrthogonalDecomposition");
   exposeEigenSolver<Matrix>(m, "EigenSolver");
   exposeSelfAdjointEigenSolver<Matrix>(m, "SelfAdjointEigenSolver");
+  exposeGeneralizedSelfAdjointEigenSolver<Matrix>(
+      m, "GeneralizedSelfAdjointEigenSolver");
   exposeComplexEigenSolver<Matrix>(m, "ComplexEigenSolver");
   exposeComplexSchur<Matrix>(m, "ComplexSchur");
   exposeGeneralizedEigenSolver<Matrix>(m, "GeneralizedEigenSolver");
