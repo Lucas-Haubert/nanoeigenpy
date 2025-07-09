@@ -63,6 +63,7 @@ set(
   test_complex_schur
   test_generalized_eigen_solver
   test_generalized_self_adjoint_eigen_solver
+  test_hessenberg_decomposition
   test_geometry
   test_ldlt
   test_llt

@@ -25,6 +25,7 @@ NB_MAKE_OPAQUE(Eigen::EigenSolver<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::ComplexEigenSolver<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::ComplexSchur<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::GeneralizedEigenSolver<Eigen::MatrixXd>)
+NB_MAKE_OPAQUE(Eigen::HessenbergDecomposition<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::FullPivLU<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::PartialPivLU<Eigen::MatrixXd>)
 NB_MAKE_OPAQUE(Eigen::BDCSVD<Eigen::MatrixXd>)
@@ -57,6 +58,7 @@ NB_MODULE(nanoeigenpy, m) {
   exposeComplexEigenSolver<Matrix>(m, "ComplexEigenSolver");
   exposeComplexSchur<Matrix>(m, "ComplexSchur");
   exposeGeneralizedEigenSolver<Matrix>(m, "GeneralizedEigenSolver");
+  exposeHessenbergDecomposition<Matrix>(m, "HessenbergDecomposition");
   exposePermutationMatrix<Eigen::Dynamic>(m, "PermutationMatrix");
   exposeFullPivLUSolver<Matrix>(m, "FullPivLU");
   exposePartialPivLUSolver<Matrix>(m, "PartialPivLU");
