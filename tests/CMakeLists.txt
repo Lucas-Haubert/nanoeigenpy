@@ -61,6 +61,7 @@ set(
   test_eigen_solver
   test_complex_eigen_solver
   test_complex_schur
+  test_generalized_eigen_solver
   test_geometry
   test_ldlt
   test_llt
