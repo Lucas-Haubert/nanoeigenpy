@@ -66,6 +66,7 @@ set(
   test_hessenberg_decomposition
   test_real_qz
   test_real_schur
+  test_tridiagonalization
   test_geometry
   test_ldlt
   test_llt

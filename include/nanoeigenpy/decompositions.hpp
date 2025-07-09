@@ -17,6 +17,7 @@
 #include "nanoeigenpy/decompositions/hessenberg-decomposition.hpp"
 #include "nanoeigenpy/decompositions/real-qz.hpp"
 #include "nanoeigenpy/decompositions/real-schur.hpp"
+#include "nanoeigenpy/decompositions/tridiagonalization.hpp"
 #include "nanoeigenpy/decompositions/permutation-matrix.hpp"
 #include "nanoeigenpy/decompositions/full-piv-lu.hpp"
 #include "nanoeigenpy/decompositions/partial-piv-lu.hpp"
