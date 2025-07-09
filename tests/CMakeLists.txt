@@ -59,6 +59,7 @@ add_tests_cpp_extension(quaternion)
 set(
   TEST_NAMES
   test_eigen_solver
+  test_complex_eigen_solver
   test_geometry
   test_ldlt
   test_llt

@@ -10,6 +10,7 @@
 #include "nanoeigenpy/decompositions/complete-orthogonal-decomposition.hpp"
 #include "nanoeigenpy/decompositions/eigen-solver.hpp"
 #include "nanoeigenpy/decompositions/self-adjoint-eigen-solver.hpp"
+#include "nanoeigenpy/decompositions/complex-eigen-solver.hpp"
 #include "nanoeigenpy/decompositions/permutation-matrix.hpp"
 #include "nanoeigenpy/decompositions/full-piv-lu.hpp"
 #include "nanoeigenpy/decompositions/partial-piv-lu.hpp"
