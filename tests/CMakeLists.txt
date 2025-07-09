@@ -64,6 +64,7 @@ set(
   test_generalized_eigen_solver
   test_generalized_self_adjoint_eigen_solver
   test_hessenberg_decomposition
+  test_real_qz
   test_geometry
   test_ldlt
   test_llt

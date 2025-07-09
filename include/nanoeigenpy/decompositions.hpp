@@ -15,6 +15,7 @@
 #include "nanoeigenpy/decompositions/complex-schur.hpp"
 #include "nanoeigenpy/decompositions/generalized-eigen-solver.hpp"
 #include "nanoeigenpy/decompositions/hessenberg-decomposition.hpp"
+#include "nanoeigenpy/decompositions/real-qz.hpp"
 #include "nanoeigenpy/decompositions/permutation-matrix.hpp"
 #include "nanoeigenpy/decompositions/full-piv-lu.hpp"
 #include "nanoeigenpy/decompositions/partial-piv-lu.hpp"
